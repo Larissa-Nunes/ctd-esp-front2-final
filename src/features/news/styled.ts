@@ -19,7 +19,6 @@ export const TituloNoticias = styled.h2`
   text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
     -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000,
     -2px 0px 0 #000000, 0px -2px 0 #000000;
-
   letter-spacing: 0.1rem;
 `;
 

@@ -7,7 +7,7 @@ import { ICita } from "./types";
 export interface EstadoCita {
   data: ICita | null;
   estado: ESTADO_FETCH;
-}
+};
 
 const initialState: EstadoCita = {
   data: null,
@@ -19,7 +19,6 @@ export const obterCitaAsync = createAsyncThunk(
   async (personagem: string) => {
     try {
       const cita = await obterCita(personagem);
-
       return cita;
     } catch (err) {
       throw err;
@@ -59,5 +58,4 @@ export const obterCitaDaAPI =
 
 export const obterCitaDoEstado = (state: RootState) => state.cita.data;
 export const obterEstadoDoPedido = (state: RootState) => state.cita.estado;
-
 export default citaSlice.reducer;
